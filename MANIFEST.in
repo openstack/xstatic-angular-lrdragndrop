@@ -1,0 +1,7 @@
+include README.txt
+recursive-include xstatic/pkg/angular_irdragndrop *
+
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.orig
+global-exclude *.rej
