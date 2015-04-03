@@ -1,8 +1,8 @@
 
-XStatic-angular-IrDragNDrop
+XStatic-Angular-lrdragndrop
 -------------------
 
-IrDragNDrop javascript library packaged for setuptools (easy_install) / pip.
+lrDragNDrop javascript library packaged for setuptools (easy_install) / pip.
 
 This package is intended to be used by **any** project that needs these files.
 

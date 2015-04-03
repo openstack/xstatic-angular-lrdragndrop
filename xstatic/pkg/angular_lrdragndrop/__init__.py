@@ -6,7 +6,7 @@ See package 'XStatic' for documentation and basic tools.
 """
 
 # official name, upper/lowercase allowed, no spaces
-DISPLAY_NAME = 'IrDragNDrop'
+DISPLAY_NAME = 'Angular-lrdragndrop'
 
 # name used for PyPi
 PACKAGE_NAME = 'XStatic-%s' % DISPLAY_NAME
@@ -17,7 +17,7 @@ NAME = __name__.split('.')[-1] # package name (e.g. 'foo' or 'foo_bar')
 
 VERSION = '1.0.2' # version of the packaged files, please use the upstream
                   # version number
-BUILD = '0' # our package build number, so we can release new builds
+BUILD = '2' # our package build number, so we can release new builds
              # with fixes for xstatic stuff.
 PACKAGE_VERSION = VERSION + '.' + BUILD # version used for PyPi
 
@@ -25,7 +25,7 @@ DESCRIPTION = "%s %s (XStatic packaging standard)" % (DISPLAY_NAME, VERSION)
 
 PLATFORMS = 'any'
 CLASSIFIERS = []
-KEYWORDS = 'drag-n-drop angular table irdragndrop xstatic'
+KEYWORDS = 'drag-n-drop angular table lrdragndrop xstatic'
 
 # XStatic-* package maintainer:
 MAINTAINER = 'Thai Tran'
@@ -44,7 +44,7 @@ BASE_DIR = join(dirname(__file__), 'data')
 
 # location of the Javascript file that's the entry point for this package, if
 # one exists, relative to BASE_DIR
-MAIN='irdragndrop.js'
+MAIN='lrdragndrop.js'
 
 LOCATIONS = {
     # CDN locations (if no public CDN exists, use an empty dict)
