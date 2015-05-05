@@ -35,7 +35,7 @@ MAINTAINER_EMAIL = 'tqtran@us.ibm.com'
 HOMEPAGE = 'https://github.com/lorenzofox3/lrDragNDrop'
 
 # this refers to all files:
-LICENSE = '(same as %s)' % DISPLAY_NAME
+LICENSE = 'MIT'
 
 from os.path import join, dirname
 BASE_DIR = join(dirname(__file__), 'data')
