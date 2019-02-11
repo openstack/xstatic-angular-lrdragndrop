@@ -1,6 +1,5 @@
-
 XStatic-Angular-lrdragndrop
--------------------
+---------------------------
 
 lrDragNDrop javascript library packaged for setuptools (easy_install) / pip.
 
