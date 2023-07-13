@@ -2,11 +2,21 @@
     'use strict';
 
     function isJqueryEventDataTransfer(){
-        return window.jQuery && (-1 == window.jQuery.event.props.indexOf('dataTransfer'));
+        return window.jQuery && (!window.jQuery.event.special.dataTransfer || 
+            !window.jQuery.event.special.dataTransfer.props || -1 === 
+            window.jQuery.event.special.dataTransfer.props.indexOf('dataTransfer'));/
     }
 
     if (isJqueryEventDataTransfer()) {
-        window.jQuery.event.props.push('dataTransfer');
+        if (!window.jQuery.event.special.dataTransfer) {
+            window.jQuery.event.special.dataTransfer = {
+                props: ['dataTransfer']
+            };
+        } else if (!window.jQuery.event.special.dataTransfer.props) {
+            window.jQuery.event.special.dataTransfer.props = ['dataTransfer'];
+        } else if (-1 === window.jQuery.event.special.dataTransfer.props.indexOf('dataTransfer')) {
+            window.jQuery.event.special.dataTransfer.props.push('dataTransfer');
+        }
     }
 
     var module = ng.module('lrDragNDrop', []);
