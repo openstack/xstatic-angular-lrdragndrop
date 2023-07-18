@@ -4,7 +4,7 @@
     function isJqueryEventDataTransfer(){
         return window.jQuery && (!window.jQuery.event.special.dataTransfer || 
             !window.jQuery.event.special.dataTransfer.props || -1 === 
-            window.jQuery.event.special.dataTransfer.props.indexOf('dataTransfer'));/
+            window.jQuery.event.special.dataTransfer.props.indexOf('dataTransfer'));
     }
 
     if (isJqueryEventDataTransfer()) {
